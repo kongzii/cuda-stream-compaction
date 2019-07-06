@@ -15,7 +15,7 @@ struct Data {
 
 `key` is generated randomly in interval specified in `config.cfg`, `FILTER` function returns 0 or 1. 
 
-1 if key is in range `[INTERVAL_FROM, INTERVAL_FROM]`, 0 otherwise.
+1 if key is in range `[INTERVAL_FROM, INTERVAL_TO]`, 0 otherwise.
 
 ## Algorithm
 
@@ -23,7 +23,7 @@ Actual algorithm performs several steps:
 
     1. Create filter array -> create new array of 0 and 1, each corresponding to the filter function output for every element
     2. Create scan array -> scan filter array
-    3. Based on filter and scan, allocate new truncated array and assign elements from original one
+    3. Based on filter and scan, allocate new truncated array and assign elements that passed filter function from original one
 
 
 ## Thanks to

@@ -17,7 +17,7 @@ struct Data {
 
 1 if key is in range `[INTERVAL_FROM, INTERVAL_FROM]`, 0 otherwise.
 
-## Algorithm
+## Algorithm
 
 Actual algorithm performs several steps:
 

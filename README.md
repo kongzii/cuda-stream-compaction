@@ -25,6 +25,15 @@ Actual algorithm performs several steps:
     2. Create scan array -> scan filter array
     3. Based on filter and scan, allocate new truncated array and assign elements that passed filter function from original one
 
+## Requirements
+
+```
+cmake
+c++
+gcc-6
+latest nvidia drivers
+nvidia-cuda-toolkit
+```
 
 ## Thanks to
 
